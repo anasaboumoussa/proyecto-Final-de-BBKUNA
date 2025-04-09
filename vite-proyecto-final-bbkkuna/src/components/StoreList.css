@@ -1,0 +1,134 @@
+/* StoreList.css - Versión corregida */
+
+:root {
+    --primary: #6c5ce7;
+    --primary-dark: #5649c0;
+    --secondary: #00cec9;
+    --dark: #2d3436;
+    --light: #f5f6fa;
+    --accent: #fd79a8;
+    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+  }
+  
+  /* Contenedor principal - Corregido */
+  .store-list {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    width: 100%;
+    box-sizing: border-box; /* Añadido para prevenir overflow */
+  }
+  
+  /* Título - Mejorado */
+  .store-list h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark);
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .store-list h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--gradient);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+  }
+  
+  /* Grid de tiendas - Solución definitiva */
+  .stores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+    align-items: start; /* Cambiado de 'stretch' a 'start' */
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Contenedor de tarjeta - Añadido */
+  .store-card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estado de carga - Mejorado */
+  .loading-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primary);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .loading-animation {
+    animation: pulse 1.5s infinite ease-in-out;
+    font-size: 2rem;
+  }
+  
+  /* Estado de error - Mejorado */
+  .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff4757;
+    padding: 2rem;
+    background: rgba(255, 71, 87, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-left: 4px solid #ff4757;
+  }
+  
+  /* Responsive Design - Optimizado */
+  @media (max-width: 1200px) {
+    .stores {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .store-list {
+      padding: 2rem 1.5rem;
+    }
+    
+    .store-list h2 {
+      font-size: 2rem;
+    }
+    
+    .stores {
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .store-list {
+      padding: 1.5rem 1rem;
+    }
+    
+    .stores {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .loading-message {
+      padding: 3rem 1rem;
+    }
+  }
+  
+  /* Animaciones */
+  @keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+  }

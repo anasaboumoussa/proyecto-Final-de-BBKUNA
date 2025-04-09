@@ -1,0 +1,125 @@
+/* Contenedor principal de la tarjeta */
+.game-card {
+  background: rgb(197, 197, 197);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px; /* Ancho máximo para pantallas grandes */
+  margin: 0 auto 1.5rem; /* Centrado y margen inferior */
+}
+
+/* Contenedor de las tarjetas */
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Título del juego */
+.game-card h3 {
+  font-size: 1.2rem;
+  color: #2d3436;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  min-height: 3.5em; /* Para títulos de 2 líneas */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: cursive;
+  font-weight: 700;
+
+}
+h2::after {
+  content: '🎮';
+  margin-left: 0.5rem;
+}
+
+/* Precios y descuento */
+.game-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.salePRICE {
+  color: #00b894;
+  font-weight: bold;
+  font-size: 1.1rem !important;
+}
+
+.normalPRICE {
+  color: red; /* Cambiado a rojo */
+  text-decoration: line-through;
+}
+
+.descuento {
+  background: #ff7675;
+  color: white;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+/* Botón de oferta */
+.game-card a {
+  background: #6c5ce7;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.game-card a:hover {
+  background: #5649c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.3);
+}
+
+/* Efecto hover de la tarjeta */
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .games {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .game-card {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .games {
+    grid-template-columns: 1fr;
+  }
+  
+  .game-card h3 {
+    font-size: 1.1rem;
+    min-height: auto;
+  }
+  
+  .game-card a {
+    padding: 0.5rem;
+  }
+}
