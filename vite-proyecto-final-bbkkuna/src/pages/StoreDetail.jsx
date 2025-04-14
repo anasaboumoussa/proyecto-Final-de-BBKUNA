@@ -65,6 +65,7 @@ const StoreDetail = () => {
       <p>ID: {store.storeID}</p>
       {/* Mostramos si la tienda está activa o no */}
       <p>Activo: {store.isActive ? 'Sí' : 'No'}</p>
+      <button onClick={() => window.history.back()}  className='button-back'>volver atras </button>
     </div>
   )
 }

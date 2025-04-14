@@ -89,6 +89,16 @@
     margin: 2rem auto;
     border-left: 4px solid #ff4757;
   }
+
+  .button-back{
+
+color: #ffffff;
+background-color: #000000;
+padding: 10px 20px; 
+border-radius: 7px;
+font-size: 16px;
+cursor: pointer;
+  }
   
   /* Responsive Design - Optimizado */
   @media (max-width: 1200px) {
@@ -114,6 +124,7 @@
   @media (max-width: 480px) {
     .store-list {
       padding: 1.5rem 1rem;
+      margin-left: 2rem;
     }
     
     .stores {
@@ -155,15 +166,15 @@
   /* Responsivo para pantallas pequeñas */
   @media (max-width: 768px) {
     .store-detail {
-      margin-left: 1rem; /* Reducir los márgenes */
-      margin-right: 1rem;
+      margin-left: 3rem; /* Reducir los márgenes */
+     
       padding: 1rem; /* Reducir el padding */
     }
   }
   
   @media (max-width: 480px) {
     .store-detail {
-      margin-left: 0.5rem; /* Más espacio en pantallas muy pequeñas */
+      margin-left: 2rem; /* Más espacio en pantallas muy pequeñas */
       margin-right: 0.5rem;
       padding: 0.8rem; /* Aún menos padding */
       max-width: 70%; /* Asegurarnos de que no haya desbordamiento */

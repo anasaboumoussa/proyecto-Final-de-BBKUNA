@@ -1,0 +1,76 @@
+/* Contenedor principal */
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Título principal */
+  .terms-title {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Fecha de actualización */
+  .terms-updated {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+  }
+  
+  /* Secciones */
+  .terms-section {
+    margin: 2rem 0;
+  }
+  
+  /* Títulos de sección */
+  .terms-section-title {
+    color: #34495e;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+  }
+  
+  /* Listas */
+  .terms-list {
+    padding-left: 1.5rem;
+  }
+  
+  .terms-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Enlaces */
+  .terms-link {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  .terms-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .terms-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .terms-container {
+      padding: 1rem;
+    }
+    
+    .terms-title {
+      font-size: 1.5rem;
+    }
+  }
