@@ -124,7 +124,7 @@ cursor: pointer;
   @media (max-width: 480px) {
     .store-list {
       padding: 1.5rem 1rem;
-      margin-left: 2rem;
+      margin-left: 0px;
     }
     
     .stores {

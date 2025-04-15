@@ -15,11 +15,11 @@
   }
   
   /* Título de la página de Login */
-  .login-title {
+  .registrar-title {
     font-size: 2rem;
-    font-family: cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 font-weight: 900;
-    color: hsl(0, 0%, 0%);  /* Color oscuro para el título */
+    color: hsl(0, 100%, 50%);  /* Color oscuro para el título */
     margin-bottom: 20px; /* Espacio debajo del título */
   }
   
@@ -74,8 +74,9 @@ font-weight: 900;
   /* Estilos para el enlace "Sign Up" */
   p {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #333;
+    margin-bottom: 3rem;
   }
   
   

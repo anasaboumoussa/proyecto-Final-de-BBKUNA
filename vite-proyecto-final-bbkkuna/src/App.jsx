@@ -12,13 +12,19 @@ import './App.css';
 import About from './pages/about';
 import SearchPage from './pages/SearchPage';
 import Login from './pages/Login';
-
-
+import Registrarme from './pages/Registrarme';
+import './App.css';
+import BackToTop  from './components/BackToTopButton';
 function App() {
   return (
     <div className="app">
       <Header />
       <main className="main-content">
+        <div>
+
+          <BackToTop /> 
+
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -26,6 +32,7 @@ function App() {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Terms" element={<Terms />} />
+          <Route path="/register" element={<Registrarme />} />
           <Route path="/contactar" element={<Contactar />} />
           <Route path="/stores/:storeId" element={<StoreDetail />} />
           <Route path="/games" element={<GameList />} /> {/* Nueva ruta para juegos */}
