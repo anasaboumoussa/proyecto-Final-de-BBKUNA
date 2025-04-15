@@ -17,7 +17,7 @@
   /* Título de la página de Login */
   .login-title {
     font-size: 2rem;
-    font-family: cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 font-weight: 900;
     color: hsl(0, 0%, 0%);  /* Color oscuro para el título */
     margin-bottom: 20px; /* Espacio debajo del título */
