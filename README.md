@@ -1,4 +1,3 @@
-# proyecto-Final-de-BBKUNA
 
 # 📚 CheapGames - Comparador de Precios de Videojuegos
 Banner de CheapGames
